@@ -1,4 +1,5 @@
-# vue-soonspace
+#[vue-soonspace](https://github.com/xuekai-china/vue-soonspace)
+
 
 ## 一、页面与空间交互
 
@@ -135,7 +136,7 @@ SoonSpaceEvent 空间事件
     ```
    
 - [ ] 空间交互事件
-   
+  
    - model-click          模型点击
    
    - model-dbClick     模型双击
@@ -156,14 +157,14 @@ SoonSpaceEvent 空间事件
       });
 
       this.$vse.$on("select-position", res => {
-  	    // Do something
+    	    // Do something
       });
-  
+    
       this.$vse.$on("camera-changed", res => {
-  	    // Do something
+    	    // Do something
       });
-    ```
-   
+     ```
+
 
 #### 3.3 vsa
 
