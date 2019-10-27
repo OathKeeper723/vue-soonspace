@@ -14,9 +14,9 @@
 
 > 在 Vue 框架里跨组件通信有多种实现方式
 >
->    			1.  [Vuex](https://vuex.vuejs.org/) 全局状态管理模式
->    			2.  [Vue事件绑定](https://cn.vuejs.org/v2/api/#vm-on) => [Vue bus总线](https://www.cnblogs.com/fanlinqiang/p/7756566.html)
->    			3.   [provide / inject](https://cn.vuejs.org/v2/api/#provide-inject) 强注入
+>  1.  [Vuex](https://vuex.vuejs.org/) 全局状态管理模式
+>  2.  [Vue事件绑定](https://cn.vuejs.org/v2/api/#vm-on) => [Vue bus总线](https://www.cnblogs.com/fanlinqiang/p/7756566.html)
+>  3.   [provide / inject](https://cn.vuejs.org/v2/api/#provide-inject) 强注入
 
 
 
@@ -80,7 +80,7 @@ npm i vue-soonspace -S
 
 ### 2. 使用
 
-```js
+```javascript
 // main.js
 import Vue from 'vue'
 import vs from 'vue-soonspace'
@@ -120,8 +120,6 @@ SoonSpaceContainer 即插件提供的空间组件
 SoonSpaceEvent 空间事件
 
 > Tips：目前（2019-08-13）只有五个事件，包含 **一个生命周期事件**、**四个空间交互事件**
->
-> ​			
 
 2. 空间可被触发事件绑定
 
@@ -129,12 +127,12 @@ SoonSpaceEvent 空间事件
 
    - initScene  =>   Promise        初始场景完成
 
-     ```javascript
-  this.$vse.initScene()
-     	.then(res => {
-    	//  Do something
-     	})
-  ```
+    ```javascript
+      this.$vse.initScene()
+        .then(res => {
+          //  Do something
+        })
+    ```
    
 - [ ] 空间交互事件
    
@@ -148,23 +146,23 @@ SoonSpaceEvent 空间事件
    
      > 其实针对空间交互事件，在插件内部也提供了像 **组件生命周期** 一样的驼峰方法名、放回 [Promise](http://es6.ruanyifeng.com/#docs/promise) 对象，写法完全一致，但是由于事件的触发机制存在问题导致，目前无法愉快的使用。
    
-     ```javascript
-     this.$vse.$on("model-click", res => {
-     	//  Do something
-     });
-     
-     this.$vse.$on("model-dbClick", res => {
-     	//  Do something
-     });
-     
-     this.$vse.$on("select-position", res => {
-  	//  Do something
-     });
+    ```javascript
+      this.$vse.$on("model-click", res => {
+      	//  Do something
+      });
+
+      this.$vse.$on("model-dbClick", res => {
+      	//  Do something
+      });
+
+      this.$vse.$on("select-position", res => {
+  	    // Do something
+      });
   
-     this.$vse.$on("camera-changed", res => {
-  	//  Do something
-     });
-  ```
+      this.$vse.$on("camera-changed", res => {
+  	    // Do something
+      });
+    ```
    
 
 #### 3.3 vsa
