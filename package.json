@@ -1,0 +1,22 @@
+{
+  "name": "vue-soonspace",
+  "version": "0.0.1",
+  "description": "Vue function integration plugin of soonspace",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuekai-china/vue-soonspace.git"
+  },
+  "keywords": [
+    "soonspace"
+  ],
+  "author": "xuek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xuekai-china/vue-soonspace/issues"
+  },
+  "homepage": "https://github.com/xuekai-china/vue-soonspace#readme"
+}
