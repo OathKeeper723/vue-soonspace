@@ -26,7 +26,7 @@
 		},
 		data() {
 			return {
-				skyBoxPath: "http://www.xwbuilders.com:9011/static/images/skybox/"
+				skyBoxPath: "https://unpkg.com/vue-soonspace/assets/images/skybox/"
 			};
 		},
 		methods: {

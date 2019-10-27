@@ -8,7 +8,7 @@ function importSdk() {
   return new Promise((resolve, reject) => {
     const st = document.createElement('script')
     st.type = 'text/javascript'
-    st.src = 'http://www.xwbuilders.com:9011/static/js/SoonSpace-min.js'
+    st.src = 'https://unpkg.com/vue-soonspace/assets/js/SoonSpace-min.js'
     st.charset = 'utf-8'
     st.onload = () => {
       // eslint-disable-next-line no-undef
