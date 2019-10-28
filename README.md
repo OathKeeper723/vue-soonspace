@@ -137,13 +137,13 @@ SoonSpaceEvent 空间事件
    
 - [ ] 空间交互事件
   
-   - model-click          模型点击
+   - modelClick         模型点击
    
-   - model-dbClick     模型双击
+   - modeldbClick       模型双击
    
-   - select-position     鼠标点击选择点
+   - selectPosition     鼠标点击选择点
    
-   - camera-changed  相机切换
+   - cameraChanged      相机切换
    
      > 其实针对空间交互事件，在插件内部也提供了像 **组件生命周期** 一样的驼峰方法名、放回 [Promise](http://es6.ruanyifeng.com/#docs/promise) 对象，写法完全一致，但是由于事件的触发机制存在问题导致，目前无法愉快的使用。
    
