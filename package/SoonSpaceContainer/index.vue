@@ -73,7 +73,7 @@
 						`${this.skyBoxPath}${this.skyBoxStyle}/`,
 						["px.jpg", "nx.jpg", "py.jpg", "ny.jpg", "pz.jpg", "nz.jpg"]
 					);
-					this.$vse.$emit(eventEnum.SCENEREADY, true);
+					this.$vse.$emit(eventEnum.INITSCENE, true);
 				} else {
 					setTimeout(() => {
 						this.initScene();

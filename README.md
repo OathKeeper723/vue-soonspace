@@ -148,19 +148,19 @@ SoonSpaceEvent 空间事件
      > 其实针对空间交互事件，在插件内部也提供了像 **组件生命周期** 一样的驼峰方法名、放回 [Promise](http://es6.ruanyifeng.com/#docs/promise) 对象，写法完全一致，但是由于事件的触发机制存在问题导致，目前无法愉快的使用。
    
     ```javascript
-      this.$vse.$on("model-click", res => {
+      this.$vse.$on('modelClick', res => {
       	//  Do something
       });
 
-      this.$vse.$on("model-dbClick", res => {
+      this.$vse.$on('modeldbClick', res => {
       	//  Do something
       });
 
-      this.$vse.$on("select-position", res => {
+      this.$vse.$on('selectPosition', res => {
     	    // Do something
       });
     
-      this.$vse.$on("camera-changed", res => {
+      this.$vse.$on('cameraChanged', res => {
     	    // Do something
       });
      ```

@@ -1,5 +1,5 @@
 /**
- * @name        vm.$sspe.$emit
+ * @name        vm.$vse.$emit
  * @description SoonSpaceContainer 可触发事件
  * @author      xuek
  * @lastUpdate  2019.08.15
@@ -7,7 +7,7 @@
 
 export default {
   // 场景准备完成 return Boolean
-  SCENEREADY: 'sceneReady',
+  INITSCENE: 'initScene',
   // 模型点击 return model
   MODELCLICK: 'modelClick',
   // 模型双击 return model
